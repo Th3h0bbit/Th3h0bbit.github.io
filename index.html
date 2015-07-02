@@ -16,19 +16,18 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <style>
-        
-        
-        
-        
-        * {
+<style>
+    
+    * {
     font-family: 'Source Sans Pro', sans-serif;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 }
 
+* {
+margin-right: 0;
+}
 
 /*Jumbotron!!!!!!!!!!!!!!!!!!*/
 
@@ -79,8 +78,31 @@
     }
 
     /* Extra Small Devices, Phones */
-    @media only screen and (min-width : 480px) {
-
+    @media only screen and (max-width : 480px) {
+        .jumbotron {
+        /*		background-color: white;*/
+        background-image: url('http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/9/24/1411568384485/Plymouth-Hoe-014.jpg');
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 1000px;
+    }
+    .jumbotron .col-md-12 {
+        position: relative;
+        left: 40px;
+        border: 20px;
+        top: 300px;
+        color: #fff;
+    }
+    .jumbotron h1 {
+        font-size: 28px;
+        color: #fff;
+    }
+    .jumbotron p {
+        font-size: 20px;
+        color: #fff;
+    }
     }
 
     /* Small Devices, Tablets */
@@ -99,7 +121,7 @@
         /*		background-color: white;*/
         background-image: url('http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/9/24/1411568384485/Plymouth-Hoe-014.jpg');
         background-size: cover;
-        background-position: center left;
+        background-position: topcenter;
         background-repeat: no-repeat;
         background-attachment: fixed;
         height: 1000px;
@@ -119,17 +141,10 @@
         font-size: 40px;
         color: #fff;
     }
+
     }
 
-    </style>
-    
-    
-    
-    
-    
-    
-    
-    
+</style>
 </head>
 
 
